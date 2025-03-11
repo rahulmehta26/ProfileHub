@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Feather } from '@expo/vector-icons';
 import { styles } from '@/styles/userCard.styles';
 import LinearGradients from './LinearGradient';
+import { COLORS } from '@/constant/color';
 
 interface User {
 
@@ -67,7 +68,7 @@ const UserCard : React.FC<UserCardProps> = ({
               {isUID && (
                 <View style={styles.infoRow}>
                   <View style={styles.iconContainer}>
-                    <Feather name="hash" size={20} color="#6366f1" />
+                    <Feather name="hash" size={20} color={COLORS.lightBlue} />
                   </View>
 
                   <View style={styles.textContainer}>
@@ -79,7 +80,7 @@ const UserCard : React.FC<UserCardProps> = ({
 
               <View style={styles.infoRow}>
                 <View style={styles.iconContainer}>
-                  <Feather name="mail" size={20} color="#6366f1" />
+                  <Feather name="mail" size={20} color={COLORS.lightBlue} />
                 </View>
                 <View style={styles.textContainer}>
                   <Text style={styles.label}>Email</Text>
@@ -90,7 +91,7 @@ const UserCard : React.FC<UserCardProps> = ({
               {isPassword && (
                 <View style={styles.infoRow}>
                   <View style={styles.iconContainer}>
-                    <Feather name="lock" size={20} color="#6366f1" />
+                    <Feather name="lock" size={20} color={COLORS.lightBlue} />
                   </View>
                   <View style={styles.textContainer}>
                     <Text style={styles.label}>Password</Text>
@@ -107,7 +108,7 @@ const UserCard : React.FC<UserCardProps> = ({
                         <Feather
                           name={showPassword ? 'eye-off' : 'eye'}
                           size={16}
-                          color="#fff"
+                          color={COLORS.white}
                         />
                       </TouchableOpacity>
                     </View>

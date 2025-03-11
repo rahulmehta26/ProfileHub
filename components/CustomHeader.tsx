@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React from 'react';
+import { COLORS } from '@/constant/color';
 
 const CustomHeader = ({ title }: { title: string }) => {
   return (
@@ -14,13 +15,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#1e1b4b',
+    backgroundColor: COLORS.primary,
     borderBottomLeftRadius: 20,
     borderBottomRightRadius: 20,
     paddingVertical: 24,
   },
   titleText: {
-    color: '#fff',
+    color: COLORS.white,
     fontSize: 18,
     fontWeight: '900',
   },

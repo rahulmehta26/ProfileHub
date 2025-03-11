@@ -2,6 +2,7 @@ import { View, Text } from 'react-native';
 import React from 'react';
 import { Tabs } from 'expo-router';
 import { MaterialIcons } from '@expo/vector-icons';
+import { COLORS } from '@/constant/color';
 
 const TabLayout = () => {
   return (
@@ -9,7 +10,7 @@ const TabLayout = () => {
       screenOptions={{
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: '#1e1b4b',
+          backgroundColor: COLORS.primary,
           borderTopWidth: 0,
           elevation: 0,
           shadowOpacity: 0,
@@ -19,8 +20,8 @@ const TabLayout = () => {
           borderTopLeftRadius:20,
           borderTopRightRadius:20
         },
-        tabBarActiveTintColor: '#818cf8',
-        tabBarInactiveTintColor: '#fff',
+        tabBarActiveTintColor: COLORS.softBlue,
+        tabBarInactiveTintColor: COLORS.white,
         tabBarLabelStyle: {
           fontSize: 12,
           fontWeight: '700',

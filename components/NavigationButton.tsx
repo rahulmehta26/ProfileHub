@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
 import { MaterialIcons } from '@expo/vector-icons';
 import { StyleSheet } from 'react-native';
+import { COLORS } from '@/constant/color';
 
 interface NavigationButtonsProps {
   onPrevious: () => void;
@@ -22,14 +23,14 @@ const NavigationButton = ({
         style={[styles.button, !canGoPrevious && styles.buttonDisabled]}
         onPress={onPrevious}
         disabled={!canGoPrevious}>
-        <MaterialIcons name='chevron-left' size={40} color={canGoPrevious ? '#818cf8' : '#4b5563'} />
+        <MaterialIcons name='chevron-left' size={40} color={canGoPrevious ? COLORS.softBlue : '#4b5563'} />
       </TouchableOpacity>
       
       <TouchableOpacity
         style={[styles.button, !canGoNext && styles.buttonDisabled]}
         onPress={onNext}
         disabled={!canGoNext}>
-        <MaterialIcons name='chevron-right' size={40} color={canGoNext ? '#818cf8' : '#4b5563'} />
+        <MaterialIcons name='chevron-right' size={40} color={canGoNext ? COLORS.softBlue : '#4b5563'} />
       </TouchableOpacity>
     </View>
   );
@@ -41,12 +42,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     columnGap: 16,
-    backgroundColor: '#fff',
+    backgroundColor: COLORS.white,
     paddingVertical:6
   },
 
   button: {
-    backgroundColor: '#1e1b4b',
+    backgroundColor: COLORS.primary,
     padding: 10,
     borderRadius: 16,
   },

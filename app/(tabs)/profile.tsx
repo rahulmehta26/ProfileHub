@@ -5,6 +5,7 @@ import useFetchData from '@/hooks/useFetchData';
 import NavigationButton from '@/components/NavigationButton';
 import Loader from '@/components/Loader';
 import CustomHeader from '@/components/CustomHeader';
+import { COLORS } from '@/constant/color';
 
 const Profile = () => {
   const { loading, data } = useFetchData();
@@ -30,7 +31,7 @@ const Profile = () => {
       <CustomHeader title='Profile' />
 
       <ScrollView showsVerticalScrollIndicator = {false} contentContainerStyle={{
-        backgroundColor:"#fff",
+        backgroundColor:COLORS.white,
       }} >
 
       <View style={styles.cardContainer}>
@@ -52,7 +53,7 @@ const Profile = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor:"#fff"
+    backgroundColor:COLORS.white
   },
   cardContainer: {
     flex: 1,

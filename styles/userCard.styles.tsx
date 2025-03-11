@@ -1,3 +1,4 @@
+import { COLORS } from '@/constant/color';
 import { Dimensions, StyleSheet } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
@@ -6,14 +7,14 @@ export const styles = StyleSheet.create({
   container: {
     width: width,
     padding: 16,
-    backgroundColor: '#fff',
+    backgroundColor: COLORS.white,
   },
   card: {
     width: '100%',
     borderRadius: 12,
     overflow: 'hidden',
-    backgroundColor: '#fff',
-    shadowColor: '#000',
+    backgroundColor: COLORS.white,
+    shadowColor: COLORS.black,
     shadowOffset: {
       width: 0,
       height: 8,
@@ -33,7 +34,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   image: {
-    backgroundColor: '#0b0c0f',
+    backgroundColor: COLORS.darkGrey,
     position: 'absolute',
     top: 0,
     right: 0,
@@ -45,9 +46,9 @@ export const styles = StyleSheet.create({
     height: width * 0.2,
     borderRadius: width * 0.1,
     borderWidth: 4,
-    borderColor: '#fff',
+    borderColor: COLORS.white,
     overflow: 'hidden',
-    backgroundColor: '#e5e7eb',
+    backgroundColor: COLORS.lightGrey,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
@@ -70,7 +71,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 12,
   },
   userIdText: {
-    color: '#fff',
+    color: COLORS.white,
     fontSize: 16,
     fontWeight: '600',
   },
@@ -84,12 +85,12 @@ export const styles = StyleSheet.create({
     height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#e5e7eb',
+    backgroundColor: COLORS.lightGrey,
   },
   avatarFallbackText: {
     fontSize: 28,
-    fontWeight: 'bold',
-    color: '#6366f1',
+    fontWeight: '900',
+    color: COLORS.lightBlue,
   },
   content: {
     paddingTop: width * 0.04,
@@ -102,17 +103,17 @@ export const styles = StyleSheet.create({
   name: {
     fontSize: 28,
     fontWeight: '900',
-    color: '#fff',
+    color: COLORS.white,
   },
   username: {
     fontSize: 16,
-    color: '#fff',
+    color: COLORS.white,
     marginTop: 4,
     fontWeight: '700',
   },
   divider: {
     height: 1,
-    backgroundColor: '#e5e7eb',
+    backgroundColor: COLORS.lightGrey,
     marginVertical: width * 0.03,
   },
   infoSection: {
@@ -121,7 +122,7 @@ export const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
-    color: '#fff',
+    color: COLORS.white,
     marginBottom: width * 0.04,
   },
   infoRow: {
@@ -136,7 +137,7 @@ export const styles = StyleSheet.create({
     maxWidth: 40,
     maxHeight: 40,
     borderRadius: 12,
-    backgroundColor: '#fff',
+    backgroundColor: COLORS.white,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -145,19 +146,19 @@ export const styles = StyleSheet.create({
   },
   label: {
     fontSize: 14,
-    color: '#fff',
+    color: COLORS.white,
     marginBottom: 2,
   },
   value: {
     fontSize: 16,
-    color: '#fff',
+    color: COLORS.white,
     fontWeight: '500',
   },
   passwordContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundColor: '#000',
+    backgroundColor: COLORS.black,
     borderRadius: 8,
     paddingHorizontal: width * 0.04,
     paddingVertical: width * 0.03,
@@ -165,11 +166,11 @@ export const styles = StyleSheet.create({
   },
   passwordValue: {
     fontSize: 16,
-    color: '#fff',
+    color: COLORS.white,
     fontWeight: '500',
   },
   passwordIcon: {
-    backgroundColor: '#6366f1',
+    backgroundColor: COLORS.lightBlue,
     width: width * 0.08,
     height: width * 0.08,
     maxWidth: 32,

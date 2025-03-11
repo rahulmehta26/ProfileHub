@@ -1,3 +1,4 @@
+import { COLORS } from "@/constant/color";
 import { Dimensions, StyleSheet } from "react-native";
 
 const { width, height } = Dimensions.get("window")
@@ -9,7 +10,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
-    backgroundColor: '#F8F9FB',
+    backgroundColor: COLORS.lightWhite,
   },
   emoji: {
     fontSize: 50,
@@ -17,27 +18,27 @@ export const styles = StyleSheet.create({
   },
   title: {
     fontSize: 28,
-    fontWeight: 'bold',
-    color: '#333',
+    fontWeight: '900',
+    color: COLORS.grey,
     marginBottom: 10,
   },
   message: {
     fontSize: 16,
     textAlign: 'center',
-    color: '#666',
+    color: COLORS.grey,
     marginBottom: 20,
   },
   link: {
     marginTop: 15,
-    backgroundColor: '#007AFF',
+    backgroundColor: COLORS.blue,
     paddingVertical: 12,
     paddingHorizontal: 25,
     borderRadius: 8,
   },
   linkText: {
     fontSize: 16,
-    fontWeight: 'bold',
-    color: '#fff',
+    fontWeight: '900',
+    color: COLORS.white,
   },
   image:{
     resizeMode:"cover",

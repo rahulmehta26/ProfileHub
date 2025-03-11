@@ -1,3 +1,4 @@
+import { COLORS } from '@/constant/color';
 import type React from 'react';
 import { useEffect, useRef } from 'react';
 import {
@@ -112,7 +113,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f8f9fe',
+    backgroundColor: COLORS.lightWhite,
   },
   dotsContainer: {
     flexDirection: 'row',
@@ -125,7 +126,7 @@ const styles = StyleSheet.create({
     height: 18,
     borderRadius: 9,
     marginHorizontal: 8,
-    shadowColor: '#000',
+    shadowColor: COLORS.black,
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
     shadowRadius: 6,
@@ -137,7 +138,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0.8,
     textAlign: 'center',
     maxWidth: width * 0.8,
-    color: '#2d3436',
+    color: COLORS.lightBlack,
     fontFamily: 'Helvetica',
     textShadowColor: 'rgba(45, 52, 54, 0.1)',
     textShadowOffset: { width: 1, height: 1 },
